@@ -2,42 +2,48 @@ def christmas_tree
   height=4
   start = 1
   increment_factor=2
-  max_length = height+start+increment_factor
   data = ARGV[0].to_i
+  max_length = ((data*10)-1)
+  legs=[]
   tree=[]
-  # Array.new((data*10)-1, " ")
   if data<0
     return
   end
-  if data.instance_of? Integer
-    1.upto(data) do
-      |item|
-      inner_arr = []
-      str = ""
-      while inner_arr.length<height
-        start.times {str += "*"}
-        start = start+increment_factor
-        splitted = str.split("")
-        inner_arr.insert(((((data*10)-1)-splitted.length)/2)+1, *splitted)
-        str=""
-      end
-      puts "The inner array is #{inner_arr}"
-      tree << inner_arr
-      height +=1
-      puts "the tree is #{tree}"
-      if item>2
-        start = inner_arr[-3].length
-        max_length = height+inner_arr[-3].length+increment_factor+2
-      else
-        start = inner_arr[-2].length
-        max_length = height+inner_arr[-2].length+increment_factor
-      end
-      # puts " The maximum length is #{max_length}"
+  1.upto(data) do
+    |item|
+    inner_arr = []
+    splitted=[]
+    str = ""
+    out_str = []
+    counter = 0
+    while counter<height
+      start.times {str += "*"}
+      padding=""
+      half_length = (max_length-str.length)/2
+      padding=" "*half_length.abs
+      start = start+increment_factor
+      out_str<<str
+      splitted<< (padding+str+padding)
+      str=""
+      counter +=1
     end
-  else
-    puts "Argument must be an integer"
+    inner_arr.insert(0, *splitted)
+    tree.insert(tree.length,*inner_arr)
+    height +=1
+    if item>2
+      start = out_str[-3].length
+    else
+      start = out_str[-2].length
+    end
   end
+  1.upto(data) do
+    str=""
+    data.times {str += "|"}
+    half_length = (max_length-str.length)/2
+    padding=" "*half_length
+    legs<<(padding+str+padding)
+  end
+  tree.insert(tree.length, *legs)
   return tree
 end
-
 puts christmas_tree
