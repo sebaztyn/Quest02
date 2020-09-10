@@ -7,9 +7,13 @@ class MyFirstSelect
   end
 
   def to_s
-    puts "Column Number: #{@column}"
     return "File: #{@file}"
   end
+
+  def join
+
+  end
+
   def where(column_name, value)
     @file[0].each_with_index{|data, idx| @column=idx if column_name==data}
     arr = []
