@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://kit.fontawesome.com/8f4d218d63.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Medium Clone</title>
+</head>
+
+<body>
+  <main class="container-fluid position-relative p-0">
+    <div class="px-md-5 py-3 d-flex justify-content-between sticky-top bg-white lighter-shadow">
+      <svg width="35" height="35" viewBox="5 5 35 35" class="ao r">
+        <path
+          d="M5 40V5h35v35H5zm8.56-12.63c0 .56-.03.69-.32 1.03L10.8 31.4v.4h6.97v-.4L15.3 28.4c-.29-.34-.34-.5-.34-1.03v-8.95l6.13 13.36h.71l5.26-13.36v10.64c0 .3 0 .35-.19.53l-1.85 1.8v.4h9.2v-.4l-1.83-1.8c-.18-.18-.2-.24-.2-.53V15.94c0-.3.02-.35.2-.53l1.82-1.8v-.4h-6.47l-4.62 11.55-5.2-11.54h-6.8v.4l2.15 2.63c.24.3.29.37.29.77v10.35z">
+        </path>
+      </svg>
+      <div class="d-flex">
+        <button class="btn btn-sm font-weight-normal grey-text">Open in app</button>
+        <button class="btn btn-outline-dark btn-sm font-weight-normal grey-text btn-outline-grey btn-grey">Get
+          started</button>
+      </div>
+    </div>
+    <div class="bg-meddy py-2 px-5 d-flex align-items-center text-white-50 mt-5">
+      <div class="d-flex flex-column mr-5 justify-content-center line-height no-clamp">
+        <span class="text-white mr-2 font-weight-bolder normal-font">towards</span>
+        <span class="text-white mr-2 text-spacing no-clamp">data science</span>
+      </div>
+      <div class="d-flex horizontal-scroll">
+        <span class="grey-custom-text text-uppercase small font-weight-bold mr-3 text-spacing no-clamp">data
+          science</span>
+        <span class="grey-custom-text text-uppercase small font-weight-bold mr-3 text-spacing no-clamp">machine
+          learning</span>
+        <span
+          class="grey-custom-text text-uppercase small font-weight-bold mr-3 text-spacing no-clamp">programming</span>
+        <span
+          class="grey-custom-text text-uppercase small font-weight-bold mr-3 text-spacing no-clamp">visualization</span>
+        <span class="grey-custom-text text-uppercase small font-weight-bold mr-3 text-spacing no-clamp">video</span>
+        <span class="grey-custom-text text-uppercase small font-weight-bold mr-3 text-spacing no-clamp">★</span>
+        <span class="text-uppercase grey-custom-text small font-weight-bold mr-3 text-spacing no-clamp">about</span>
+        <span
+          class="text-uppercase grey-custom-text small font-weight-bold mr-3 text-spacing border-left pl-3 no-clamp">contribute</span>
+      </div>
+    </div>
+    <div class="top-notification d-flex py-3 pl-2">
+      <span>You have <strong>1</strong> free story left this month.</span>
+      <span>&nbsp; Sign up and get an extra one for free.</span>
+    </div>
+
+    <div class="content">
+      <h1 class="pb-2">10 Common Software Architectural Patterns in a nutshell</h1>
+      <div class="d-flex justify-content-between mb-5">
+        <div class=" d-flex">
+          <div class="image-container d-inline-block">
+            <svg width="57" height="57" viewBox="0 0 57 57">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28.5 1.2A27.45 27.45 0 0 0 4.06 15.82L3 15.27A28.65 28.65 0 0 1 28.5 0C39.64 0 49.29 6.2 54 15.27l-1.06.55A27.45 27.45 0 0 0 28.5 1.2zM4.06 41.18A27.45 27.45 0 0 0 28.5 55.8a27.45 27.45 0 0 0 24.44-14.62l1.06.55A28.65 28.65 0 0 1 28.5 57 28.65 28.65 0 0 1 3 41.73l1.06-.55z">
+              </path>
+            </svg>
+            <img src="https://miro.medium.com/fit/c/96/96/2*pTTsurl-IeDfoG86mmVGQQ.jpeg" alt="" height="48"
+              width="48" />
+          </div>
+          <div class="d-flex justify-content-center flex-column ml-2">
+            <div class="d-flex">
+              <a href="#">Vijini Mallawaarachchi</a>
+              <button class="text-capitalize btn btn-outline-dark ml-2 smaller-button">follow</button>
+            </div>
+
+            <div class="d-flex justify-content-between w-100">
+              <div>
+                <a href="#">Sep 4, 2017</a>
+                ·
+                <span>5 min read</span>
+                <span class="text-dark font-weight-bolder">★</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="social-icons pr-5 d-flex align-items-end justify-content-around">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+          <svg width="25" height="25" viewBox="0 0 25 25">
+            <path
+              d="M19 6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14.66h.01c.01.1.05.2.12.28a.5.5 0 0 0 .7.03l5.67-4.12 5.66 4.13a.5.5 0 0 0 .71-.03.5.5 0 0 0 .12-.29H19V6zm-6.84 9.97L7 19.64V6a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v13.64l-5.16-3.67a.49.49 0 0 0-.68 0z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+      <div>
+        Ever wondered how large enterprise scale systems are designed? Before major software development starts, we have
+        to
+        choose a suitable architecture that will provide us with the desired functionality and quality attributes.
+        Hence, we
+        should understand different architectures, before applying them to our design.
+      </div>
+      <div class=" py-5">
+        <img src="https://miro.medium.com/max/700/1*M22DR3WPqbWXWidYIq2GwA.png" alt="">
+      </div>
+      <div>
+        <h1 class="content-headers">
+          What is an Architectural Pattern?
+        </h1>
+        <div class="mb-4">
+          According to Wikipedia,
+        </div>
+        <blockquote class=" font-italic quotes mb-4">
+          <span>
+            An <strong>architectural pattern</strong> is a general, reusable solution to a commonly occurring problem in
+            software
+            architecture within
+            a given context. Architectural patterns are similar to software design pattern but have a broader scope.
+          </span>
+        </blockquote>
+        <div class="mb-4">
+          In this article, I will be briefly explaining the following 10 common architectural patterns with their
+          usage, pros and
+          cons.
+        </div>
+        <ol class="mb-5">
+          <li>
+            <strong>
+              Layered pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Client-server pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Master-slave pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Pipe-filter pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Broker pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Peer-to-peer pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Event-bus pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Model-view-controller pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Blackboard pattern
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Interpreter pattern
+            </strong>
+          </li>
+        </ol>
+        <div>
+          <h1 class="content-headers">
+            1. Layered pattern
+          </h1>
+          <div>
+            This pattern can be used to structure programs that can be decomposed into groups of subtasks, each of which
+            is at a
+            particular level of abstraction. Each layer provides services to the next higher layer.
+          </div>
+          <div class="my-5">
+            The most commonly found 4 layers of a general information system are as follows.
+          </div>
+          <ul>
+            <li><strong>Presentation layer</strong> (also known as <strong>UI layer</strong>)</li>
+            <li><strong>Application layer</strong> (also known as <strong>service layer</strong>)</li>
+            <li><strong>Business logic layer</strong>(also known as <strong>domain layer</strong>)</li>
+            <li><strong>Data access layer</strong> (also known as <strong>persistence layer</strong>)</li>
+          </ul>
+          <h5>
+            Usage
+          </h5>
+          <ul>
+            <li>General desktop applications.</li>
+            <li>E commerce web applications.</li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/188/1*jMWk_JqqyyloVPhTs_Zd1A.png" alt="">
+            <span data="Layered-pattern">Layered pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            2. Client-server pattern
+          </h1>
+          <div>
+            This pattern consists of two parties; a server and multiple clients. The server component will provide
+            services to
+            multiple client components. Clients request services from the server and the server provides relevant
+            services to those
+            clients. Furthermore, the server continues to listen to client requests.
+          </div>
+          <h5 class="my-3">
+            Usage
+          </h5>
+          <ul>
+            <li>Online applications such as email, document sharing and banking.</li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/284/1*4xX_WQQuD2u0PMK5bcWFkQ.png" alt="">
+            <span data="Client-server-pattern">Client-server pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            3. Master-slave pattern
+          </h1>
+          <div>
+            This pattern consists of two parties; master and slaves. The master component distributes the work among
+            identical slave
+            components, and computes a final result from the results which the slaves return.
+          </div>
+          <h5 class="my-3">
+            Usage
+          </h5>
+          <ul>
+            <li>In database replication, the master database is regarded as the authoritative source, and the slave
+              databases are
+              synchronized to it.</li>
+            <li>Peripherals connected to a bus in a computer system (master and slave drives).</li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/542/1*lsK9QntZl2d5oLojwRGXDg.png" alt="">
+            <span data="Master-slave-pattern">Master-slave pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            4. Pipe-filter pattern
+          </h1>
+          <div>
+            This pattern can be used to structure systems which produce and process a stream of data. Each processing
+            step is
+            enclosed within a filter component. Data to be processed is passed through pipes. These pipes can be used
+            for buffering
+            or for synchronization purposes.
+          </div>
+          <h5 class="my-3">
+            Usage
+          </h5>
+          <ul>
+            <li>Compilers. The consecutive filters perform lexical analysis, parsing, semantic analysis, and code
+              generation.</li>
+            <li>Workflows in bioinformatics.</li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/700/1*qikehZcDhhl_wWsqeI_nvg.png" alt="">
+            <span data="Pipe-filter-pattern">Pipe-filter pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            5. Broker pattern
+          </h1>
+          <div>
+            This pattern is used to structure distributed systems with decoupled components. These components can
+            interact with each
+            other by remote service invocations.<br> <strong>A broker</strong> component is responsible for the
+            coordination
+            of communication among
+            <strong>components</strong>.
+            <div class="my-4">
+              Servers publish their capabilities (services and characteristics) to a broker. Clients request a service
+              from the
+              broker, and the broker then redirects the client to a suitable service from its registry.
+
+            </div>
+          </div>
+          <h5 class="my-3">
+            Usage
+          </h5>
+          <ul>
+            <li>Message broker software such as <a class="text-capitalize text-black underlined font-weight-bold"
+                href="#">Apache
+                ActiveMQ</a>,
+              <a href="#" class="text-capitalize text-black underlined font-weight-bold">Apache
+                Kafka</a>,
+              <a href="#" class="text-capitalize text-black underlined font-weight-bold">RabbitMQ</a> and
+              <a href="#" class="text-capitalize text-black underlined font-weight-bold">JBoss Messaging</a>.</li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/700/1*1qRQZjLRAd0yY_T9p2OgBw.png" alt="">
+            <span data="Broker-pattern">Broker pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            6. Peer-to-peer pattern
+          </h1>
+          <div class="mb-4">
+            In this pattern, individual components are known as <strong>peers</strong>. Peers may function both as a
+            <strong>client</strong>, requesting services from
+            other peers, and as a <strong>server</strong>, providing services to other peers. A peer may act as a client
+            or as a server or as both,
+            and it can change its role dynamically with time.
+          </div>
+          <h5 class="">
+            Usage
+          </h5>
+          <ul>
+            <li>
+              File-sharing networks such as <a href="#" class="underlined text-black">Gnutella</a> and <a href="#"
+                class="underlined text-black">G2</a> )
+            </li>
+            <li>
+              Multimedia protocols such as <a href="#" class="underlined text-black">P2PTV</a> and <a href="#"
+                class="underlined text-black">PDTP</a>.
+            </li>
+            <li>
+              Cryptocurrency-based products such as <a href="#" class="underlined text-black">Bitcoin</a> and <a
+                href="#" class="underlined text-black">Blockchain</a>
+            </li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/260/1*ROvkckSTw1UncrbQSmUJUQ.png" alt="">
+            <span data="Peer-to-peer-pattern">Peer-to-peer pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            7. Event-bus pattern
+          </h1>
+          <div class="mb-4">
+            This pattern primarily deals with events and has 4 major components; <strong>event source</strong>,
+            <strong>event listener</strong>, <strong>channel</strong> and <strong>event
+              bus</strong>. Sources publish messages to particular channels on an event bus. Listeners subscribe to
+            particular channels.
+            Listeners are notified of messages that are published to a channel to which they have subscribed before.
+          </div>
+          <h5 class="">
+            Usage
+          </h5>
+          <ul>
+            <li>
+              Android development
+            </li>
+            <li>
+              Notification services
+            </li>
+            <li>
+              Cryptocurrency-based products such as <a href="#" class="underlined text-black">Bitcoin</a> and <a
+                href="#" class="underlined text-black">Blockchain</a>
+            </li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/632/1*DOZ4nVR9zkJm-EnXT3KOGQ.png" alt="">
+            <span data="Event-bus-pattern">Event-bus pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            8. Model-view-controller pattern
+          </h1>
+          <div class="mb-4">
+            This pattern, also known as MVC pattern, divides an interactive application in to 3 parts as,
+          </div>
+          <ol class="pl-4">
+            <li>
+              <strong>model</strong> — contains the core functionality and data
+            </li>
+            <li>
+              <strong>view</strong> — displays the information to the user (more than one view may be defined)
+            </li>
+            <li>
+              <strong>controller</strong> — handles the input from the user
+            </li>
+          </ol>
+          <div class="mb-4">This is done to separate internal representations of information from the ways information
+            is presented
+            to, and accepted
+            from, the user. It decouples components and allows efficient code reuse.</div>
+          <h5 class="">
+            Usage
+          </h5>
+          <ul>
+            <li>
+              Architecture for World Wide Web applications in major programming languages.
+            </li>
+            <li>
+              Web frameworks such as <a href="#" class="underlined text-black">Django</a> and <a href="#"
+                class="underlined text-black">Rails</a>.
+            </li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/700/1*OP0CS6O5Sb66jpc-H-IuRQ.png" alt="">
+            <span data="Model-view-controller pattern">Model-view-controller pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            9. Blackboard pattern
+          </h1>
+          <div class="mb-4">
+            This pattern is useful for problems for which no deterministic solution strategies are known. The blackboard
+            pattern
+            consists of 3 main components.
+          </div>
+          <ul class="pl-4">
+            <li>
+              <strong>blackboard</strong> — a structured global memory containing objects from the solution space
+            </li>
+            <li>
+              <strong>knowledge source</strong> — specialized modules with their own representation
+            </li>
+            <li>
+              <strong>control component</strong> — selects, configures and executes modules.
+            </li>
+          </ul>
+          <div class="mb-4">All the components have access to the blackboard. Components may produce new data objects
+            that are added to the
+            blackboard. Components look for particular kinds of data on the blackboard, and may find these by pattern
+            matching with
+            the existing knowledge source.
+          </div>
+          <h5 class="">
+            Usage
+          </h5>
+          <ul>
+            <li>
+              Speech recognition
+            </li>
+            <li>Vehicle identification and tracking</li>
+            <li>Protein structure identification</li>
+            <li>Sonar signals interpretation.</li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/530/1*ArbMx7A21I47llvwUTiSDg.png" alt="">
+            <span data="Blackboard pattern">Blackboard pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            10. Interpreter pattern
+          </h1>
+          <div class="mb-4">
+            This pattern is used for designing a component that interprets programs written in a dedicated language. It
+            mainly
+            specifies how to evaluate lines of programs, known as sentences or expressions written in a particular
+            language. The
+            basic idea is to have a class for each symbol of the language.
+          </div>
+          <h5 class="">
+            Usage
+          </h5>
+          <ul>
+            <li>
+              Database query languages such as SQL.
+            </li>
+            <li>Languages used to describe communication protocols.</li>
+          </ul>
+          <div class="my-5 d-flex align-items-center flex-column">
+            <img src="https://miro.medium.com/max/660/1*DrC3T5R4SsdcQY6aXLCRZA.png" alt="">
+            <span data="Interpreter pattern">Interpreter pattern</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="content-headers">
+            Comparison of Architectural Patterns
+          </h1>
+          <div class="mb-4">
+            The table given below summarizes the pros and cons of each architectural pattern.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center flex-column">
+      <img src="https://miro.medium.com/max/1000/1*Z9dKeyf6yi0nFMaUZF1P3Q.png" alt="">
+      <span data="Comparison of Architectural Patterns">Comparison of Architectural Patterns</span>
+    </div>
+    <div class="content">
+      <div class="mb-4">Hope you found this article useful. I would love to hear your thoughts. 😇</div>
+      <div class="mb-4">Thanks for reading. 😊</div>
+      <div class="mb-5">Cheers! 😃</div>
+      <div class="mb-4">
+        <h1 class="content-headers">References</h1>
+        <a href="#"
+          class="text-black underlined">https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6</a>
+      </div>
+      <div class="newsletter mb-5">
+        <h3>Sign up for The Daily Pick</h3>
+        <h6>By Towards Data Science</h6>
+        <div>Hands-on real-world examples, research, tutorials, and cutting-edge techniques delivered Monday to
+          Thursday. Make
+          learning your daily ritual. <a href="#" class="underlined">Take a look</a></div>
+        <div class="d-flex justify-content-between mb-4"><input type="text" placeholder="Your email">
+          <button class="">
+            <svg width="20" height="16" viewBox="0 0 20 16">
+              <path
+                d="M0 .35v15.3h20V.35H0zm6.95 9.38l3.05 2.5 3.05-2.5 4.88 4.73H2.07l4.88-4.73zM1.2 13.64V5.02l4.82 3.94-4.82 4.68zm12.78-4.68l4.82-3.94v8.62l-4.82-4.68zm4.82-7.42v1.94l-8.8 7.2-8.8-7.2V1.54h17.6z">
+              </path>
+            </svg>Get this newsletter</button>
+        </div>
+        <div>
+          By signing up, you will create a Medium account if you don’t already have one. Review our <a href="#"
+            class="underlined">Privacy
+            Policy</a> for
+          more
+          information about our privacy practices.
+        </div>
+      </div>
+      <div class="d-flex link-tags flex-wrap">
+        <button>Software Architecture</button>
+        <button>Programming</button>
+        <button>Computer Science</button>
+        <button>Software Engineering</button>
+        <button>Towards Data Science</button>
+      </div>
+      <div class="d-flex justify-content-between responses-and-tags">
+        <div class="d-flex">
+          <div class="d-flex">
+            <svg width="33" height="33" viewBox="0 0 33 33" aria-label="clap">
+              <path
+                d="M28.86 17.34l-3.64-6.4c-.3-.43-.71-.73-1.16-.8a1.12 1.12 0 0 0-.9.21c-.62.5-.73 1.18-.32 2.06l1.22 2.6 1.4 2.45c2.23 4.09 1.51 8-2.15 11.66a9.6 9.6 0 0 1-.8.71 6.53 6.53 0 0 0 4.3-2.1c3.82-3.82 3.57-7.87 2.05-10.39zm-6.25 11.08c3.35-3.35 4-6.78 1.98-10.47L21.2 12c-.3-.43-.71-.72-1.16-.8a1.12 1.12 0 0 0-.9.22c-.62.49-.74 1.18-.32 2.06l1.72 3.63a.5.5 0 0 1-.81.57l-8.91-8.9a1.33 1.33 0 0 0-1.89 1.88l5.3 5.3a.5.5 0 0 1-.71.7l-5.3-5.3-1.49-1.49c-.5-.5-1.38-.5-1.88 0a1.34 1.34 0 0 0 0 1.89l1.49 1.5 5.3 5.28a.5.5 0 0 1-.36.86.5.5 0 0 1-.36-.15l-5.29-5.29a1.34 1.34 0 0 0-1.88 0 1.34 1.34 0 0 0 0 1.89l2.23 2.23L9.3 21.4a.5.5 0 0 1-.36.85.5.5 0 0 1-.35-.14l-3.32-3.33a1.33 1.33 0 0 0-1.89 0 1.32 1.32 0 0 0-.39.95c0 .35.14.69.4.94l6.39 6.4c3.53 3.53 8.86 5.3 12.82 1.35zM12.73 9.26l5.68 5.68-.49-1.04c-.52-1.1-.43-2.13.22-2.89l-3.3-3.3a1.34 1.34 0 0 0-1.88 0 1.33 1.33 0 0 0-.4.94c0 .22.07.42.17.61zm14.79 19.18a7.46 7.46 0 0 1-6.41 2.31 7.92 7.92 0 0 1-3.67.9c-3.05 0-6.12-1.63-8.36-3.88l-6.4-6.4A2.31 2.31 0 0 1 2 19.72a2.33 2.33 0 0 1 1.92-2.3l-.87-.87a2.34 2.34 0 0 1 0-3.3 2.33 2.33 0 0 1 1.24-.64l-.14-.14a2.34 2.34 0 0 1 0-3.3 2.39 2.39 0 0 1 3.3 0l.14.14a2.33 2.33 0 0 1 3.95-1.24l.09.09c.09-.42.29-.83.62-1.16a2.34 2.34 0 0 1 3.3 0l3.38 3.39a2.17 2.17 0 0 1 1.27-.17c.54.08 1.03.35 1.45.76.1-.55.41-1.03.9-1.42a2.12 2.12 0 0 1 1.67-.4 2.8 2.8 0 0 1 1.85 1.25l3.65 6.43c1.7 2.83 2.03 7.37-2.2 11.6zM13.22.48l-1.92.89 2.37 2.83-.45-3.72zm8.48.88L19.78.5l-.44 3.7 2.36-2.84zM16.5 3.3L15.48 0h2.04L16.5 3.3z"
+                fill-rule="evenodd"></path>
+            </svg>
+            <span>34k claps</span>
+          </div>
+          <div class="d-flex">
+            <i class="far fa-comment"></i>
+            <span>96 responses</span>
+          </div>
+        </div>
+        <div>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+          <svg width="25" height="25" viewBox="0 0 25 25">
+            <path
+              d="M19 6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14.66h.01c.01.1.05.2.12.28a.5.5 0 0 0 .7.03l5.67-4.12 5.66 4.13a.5.5 0 0 0 .71-.03.5.5 0 0 0 .12-.29H19V6zm-6.84 9.97L7 19.64V6a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v13.64l-5.16-3.67a.49.49 0 0 0-.68 0z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="author d-flex mt-4 mb-5">
+          <div class="image-container d-inline-block pr-4">
+            <svg width="91" height="91" viewBox="0 0 91 91">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M45.5 1.4c-17.14 0-32 9.95-39.25 24.5L5 25.28C12.47 10.28 27.8 0 45.5 0S78.53 10.29 86 25.28l-1.25.62C77.5 11.35 62.65 1.4 45.5 1.4zM6.25 65.1c7.25 14.55 22.1 24.5 39.25 24.5 17.14 0 32-9.95 39.25-24.5l1.25.62C78.53 80.72 63.2 91 45.5 91S12.47 80.71 5 65.72l1.25-.62z">
+              </path>
+            </svg>
+            <img src="https://miro.medium.com/fit/c/96/96/2*pTTsurl-IeDfoG86mmVGQQ.jpeg" alt="" height="80"
+              width="80" />
+          </div>
+          <div class="d-flex justify-content-center flex-column ml-2">
+            <span class=" text-uppercase">written by</span>
+            <div class="d-flex w-100 justify-content-between">
+              <a href="#">Vijini Mallawaarachchi</a>
+              <button class="text-capitalize btn ml-2 smaller-button">follow</button>
+            </div>
+            <div class="d-flex justify-content-between w-75">
+              PhD Student 🇱🇰 at ANU 🇦🇺 | Computational Genomics 👩🏻‍🔬 | Data Science 👩🏻‍💻 | Music 🎵 |
+              Astronomy 🔭 | Travel
+              🎒 | vijinimallawaarachchi.com
+            </div>
+          </div>
+        </div>
+        <div class="author d-flex mt-4 pb-4 light-border">
+          <div class="d-inline-block pl-2 pr-4">
+            <img src="https://miro.medium.com/fit/c/160/160/1*hVxgUA6kP-PgL5TJjuyePg.png" alt="" height="80"
+              width="80" />
+          </div>
+          <div class="d-flex justify-content-center flex-column ml-2 flex-grow-1">
+            <div class="d-flex w-100 justify-content-between">
+              <a href="#" class="text-black">Towards Data Science</a>
+              <button class="text-capitalize btn ml-2 smaller-button btn-md">follow</button>
+            </div>
+            <div class="d-flex justify-content-between w-75">
+              A Medium publication sharing concepts, ideas, and codes.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section class="more-section text-capitalize">
+      <h5 class=" font-weight-bolder pb-4 light-border mt-5">more from medium</h5>
+      <div class="d-flex flex-wrap">
+        <div class="mr-3">
+          <div class="pr-3">
+            <h6 class="">How I’d Learn Data Science if I Could Start Over (2 years in)</h6>
+            <div>
+              <a href="#">Terence S &nbsp;</a>in<a href="">&nbsp;Towards Data Science</a>
+            </div>
+          </div>
+          <div>
+            <img src="https://miro.medium.com/fit/c/70/70/0*BFXwH55GTU8A4lU_" alt="" class="">
+          </div>
+        </div>
+        <div class="mr-3">
+          <div class="pr-3">
+            <h6>
+              10 Cool Python Project Ideas for Python Developers
+            </h6>
+            <div>
+              <a href="#">Claire D. Costa &nbsp;</a>in<a href="">&nbsp;Towards Data Science</a>
+            </div>
+          </div>
+          <div>
+            <img src="https://miro.medium.com/fit/c/70/70/1*J4xsEISU9wuB237dgDfLNA.jpeg" alt="">
+          </div>
+        </div>
+        <div class="mr-3">
+          <div class="pr-3">
+            <h6>3 Programming Books Every Data Scientist Must Read</h6>
+            <div>
+              <a href="#">Dario Radečić &nbsp;</a>in<a href="">&nbsp;Towards Data Science</a>
+            </div>
+          </div>
+          <div>
+            <img src="https://miro.medium.com/fit/c/70/70/0*sfz54aKIJVKERHfH" alt="">
+          </div>
+        </div>
+        <div class="mr-3">
+          <div class="pr-3">
+            <h6>The Beauty of Bayesian Optimization, Explained in Simple Terms</h6>
+            <div>
+              <a href="#">Andre Ye &nbsp;</a>in<a href="">&nbsp;Towards Data Science</a>
+            </div>
+          </div>
+          <div>
+            <img src="https://miro.medium.com/fit/c/70/70/0*2VEofdAC1EdNBx5t" alt="">
+          </div>
+        </div>
+        <div class="mr-3">
+          <div class="pr-3">
+            <h6>Develop and sell a Python API — from start to end tutorial</h6>
+            <div><a href="#">Daniel Deutsch &nbsp;</a>in<a href="">&nbsp;Towards Data Science</a></div>
+          </div>
+          <div>
+            <img src="https://miro.medium.com/fit/c/70/70/0*cfcXWGG6Uo__Be_4" alt="">
+          </div>
+        </div>
+        <div class="mr-3">
+          <div class="pr-3">
+            <h6>Python Books You Must Read in 2020</h6>
+            <div><a href="#">Claire D. Costa &nbsp;</a>in<a href="">&nbsp;Towards Data Science</a></div>
+          </div>
+          <div><img src="https://miro.medium.com/fit/c/70/70/1*qjzRVOyNL_AP_ZfRT0OfOw.jpeg" alt=""></div>
+        </div>
+        <div class="mr-3">
+          <div class="pr-3">
+            <h6>4 Python AutoML Libraries Every Data Scientist Should Know</h6>
+            <div><a href="#">Andre Ye&nbsp;</a>in<a href="">&nbsp;Towards Data Science</a></div>
+          </div>
+          <div>
+            <img src="https://miro.medium.com/fit/c/70/70/0*Ahso1yf-klcjbEhK" alt="">
+          </div>
+        </div>
+        <div class="mr-3">
+          <div class="pr-3">
+            <h6>The Curse of Dimensionality… minus the curse of jargon</h6>
+            <div><a href="#">Cassie Kozyrkov&nbsp;</a>in<a href="">&nbsp;Towards Data Science</a></div>
+          </div>
+          <div>
+            <img src="https://miro.medium.com/fit/c/70/70/1*6Ioib40DlyRaXc3_JolNlQ.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="mt-5 footer p-5">
+      <div class="d-flex pb-5">
+        <div>
+          <h5 class=" text-white-50">Discover Medium</h5>
+          <p>
+            Welcome to a place where words matter. On Medium, smart voices and original ideas take center stage - with
+            no
+            ads in
+            sight. <a href="#">Watch</a>
+          </p>
+        </div>
+        <div>
+          <h5 class="text-white-50">Make Medium yours</h5>
+          <p>Follow all the topics you care about, and we’ll deliver the best stories for you to your homepage and
+            inbox.
+            <a href="#">Explore</a></p>
+        </div>
+        <div>
+          <h5 class="text-white-50">Become a member</h5>
+          <p>
+            Get unlimited access to the best stories on Medium — and support writers while you’re at it. Just $5/month.
+            <a href="#">Upgrade</a>
+          </p>
+        </div>
+
+      </div>
+      <div class="d-flex justify-content-between py-4 w-100">
+        <h5 class="text-white w-75">Medium</h5>
+        <div class="d-flex w-25 justify-content-around">
+          <span class="text-white">About</span>
+          <span class="text-white">Help</span>
+          <span class="text-white">Legal</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
