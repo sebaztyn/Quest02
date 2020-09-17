@@ -1,4 +1,6 @@
 require 'sinatra'
+require 'haml'
+require 'sinatra/reloader' if development?
 
 sinatra_songs = [
     'Ac-cent-tchu-ate the Positive',
@@ -22,7 +24,23 @@ sinatra_songs = [
     'All Through the Day',
     'America the Beautiful'
 ]
+  get '/' do
+    sinatra_songs.sample
+  end
 
-get '/' do
-  sinatra_songs.sample
-end
+  get '/birth_place' do
+    "December 12, 1915"
+  end
+  get '/picture' do
+    @img_src="https://upload.wikimedia.org/wikipedia/commons/a/af/Frank_Sinatra_%2757.jpg"
+    haml :index
+
+  end
+
+  get '/birth_city' do
+    "Hoboken, New Jersey, U.S."
+  end
+
+  get '/wifes' do
+    "Nancy Barbato, Ava Gardner, Mia Farrow, Barbara Marx"
+  end
